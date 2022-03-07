@@ -1,0 +1,12 @@
+{
+   "name": "Mute New Guild",
+   "authors": [
+      {
+         "name": "eternal",
+         "id": "263689920210534400"
+      }
+   ],
+   "description": "Automatically mutes newly joined guilds.",
+   "version": "1.0.0",
+   "id": "eternal.mute-new-guild"
+}
