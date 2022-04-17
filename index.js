@@ -10,7 +10,7 @@ const [
    Settings
 ] = bulk(
    filters.byProps('updateGuildNotificationSettings'),
-   filters.byProps('getSanitizedRestrictedGuilds'),
+   filters.byProps('restrictedGuilds'),
    filters.byProps('updateRemoteSettings')
 );
 
@@ -37,7 +37,7 @@ export default class MuteNewGuild extends Plugin {
          mobile_push: true
       });
 
-      const guilds = new Set(Guilds.getSanitizedRestrictedGuilds());
+      const guilds = new Set(Guilds.restrictedGuilds);
 
       guilds.delete(id);
 
